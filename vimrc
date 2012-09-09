@@ -58,6 +58,11 @@ if has("gui_running")
 	:set guifont=*-lucidatypewriter-medium-r-normal-*-*-180-*-*-m-*-*
     elseif has("gui_win32")
 	:set guifont=Luxi_Mono:h12:cANSI
+    elseif has("gui_macvim")
+        :set guifont=Monaco:h9
+        :set toolbar=icons,text
+        :set toolbariconsize=small
+        :set guioptions+=T
     else
         :set guifont=Monaco:h9
     endif
